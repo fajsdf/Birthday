@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생일 축하드려요!!!</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="SHA384-2VBKHGGXH7PPCAQO46MGNOM800GUTWHOZ2f9cug65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('https://example.com/birthday-Background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #FF5C5C;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: 30%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        #languageToggle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        var languages = ['korean', 'english', 'japanese'];
+        var currentLanguageIndex = 0;
+
+        function toggleLanguage() {
+            currentLanguageIndex = (currentLanguageIndex + 1) % languages.length;
+            updateContent();
+        }
+
+        function updateContent() {
+            var currentLanguage = languages[currentLanguageIndex];
+            var elements = document.querySelectorAll('.language-content');
+
+            elements.forEach(function (element) {
+                var content = element.getAttribute('data-' + currentLanguage);
+                element.innerText = content;
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <button id="languageToggle" onclick="toggleLanguage()">日/韓/英</button>
+    <div class="container">
+        <div class="text-center">
+            <h1>생일 축하드려요!!! 🎉🎂</h1>
+            <p class="language-content" data-korean="미혜 누나의 생일" data-english="It's Mihye Nuna's birthday"
+                data-japanese="美惠姉妹の誕生日"></p>
+            <p class="language-content" data-korean="오늘은 특별한 날, 당신의 생일입니다!" data-english="Today is a special day, it's your birthday!"
+                data-japanese="今日は特別な日、お誕生日です！"></p>
+            <p class="language-content" data-korean="누나를 만나서 즐겁게 대화도 많이 나우고 누나 봄 받아야 갰다는 생각도 했어요"
+                data-english="Meeting you has brought many joyful conversations and thoughts of receiving spring from you."
+                data-japanese="あなたに会って、たくさんの楽しい会話とあなたから春を受け取ることを考えました。"></p>
+            <p class="language-content" data-korean="처음에 메시지 받고 '뭐지 신종 보이스피싱?' 그런건가 했는데 사진을 보고 너무 놀랐어요."
+                data-english="At first, when I received the message, I thought, 'Is this some new type of voice phishing?' But when I saw the photos, I was amazed."
+                data-japanese="最初にメッセージを受け取ったとき、 'これは新しいタイプのボイスフィッシングなのか？' と思いましたが、写真を見て驚きました。"></p>
+                <p class="language-content" data-korean="너무 아름다운 여성 분이 계시니 말을 못꺼내 겠더라고요.."
+                data-english="There was such a beautiful woman that I couldn't speak out."
+                data-japanese="とても美しい女性の方がいらっしゃるので、言葉を出すことができませんでした。"></p>
+                <p class="language-content" data-korean="그래도 누나랑 친해지고 싶었고 누나랑 만나보고 싶었어요. 언어가 다르면 뭐 어때요?"
+                data-english="Still, I wanted to be friends with my sister and meet her. What's the point of speaking different languages?"
+                data-japanese="でも、お姉さんと仲良くなりたかったし、お姉さんと会ってみたかったです。 言語が違ったらどうですか？"></p>
+                <p class="language-content" data-korean="제가 그랬죠 실수 하면서 배우는 거라고 그리고 누나 잘하고 있어요."
+                data-english="I told you that you learn by making mistakes. You're doing great."
+                data-japanese="僕がそうでした。ミスをしながら学ぶんだって。 そしてお姉さん、頑張っています。"></p>
+                <p class="language-content" data-korean="잘 될거예요! 누나 자신을 믿고 자책하지 말아요 모를 수도 있는거고 실수 할 수 있어요."
+                data-english="It's going to work! Trust yourself, don't blame yourself. You may not know. You may make mistakes"
+                data-japanese="うまくいきますよ！ お姉さん自身を信じて自責しないでください 分からないかもしれないし、 失敗するかもしれません"></p>
+                <p class="language-content" data-korean="처음에 친구 하자고 해줘서 고마워요. 제가 낮을 많이 가리는 편이라 처음 보는 사람하고는
+                말을 잘 못하는데 누나가 잘 대해주셔서 친해진거 같아요 너무 감사해요."
+                data-english="Thank you for asking me to be friends at first. I tend to be picky about days, so I don't meet people for the first time
+                I'm not good at talking, but I think we got close because you treated me well. Thank you so much"
+                data-japanese="最初に友達になろうと言ってくれてありがとう。 私はお昼をよく選ぶ方なので、初めて会う人とは
+                上手く話せませんが、お姉さんが優しくしてくださったので仲良くなったと思います 本当にありがとうございます"></p>
+            <!-- Include all paragraphs for each language -->
+        </div>
+
+        <div class="photo-container">
+            <img class="photo" src="생일.jpeg" alt="생일 사진 1">
+            <img class="photo" src="태어나줘서 고마워.jpg" alt="생일 사진 2">
+            <img class="photo" src="하트.jpg" alt="생일 사진 3">
+           
+        </div>
+        <iframe width="５０" height="５０" src="https://www.youtube.com/embed/o-l21CTY27Q?si=AZaZFBjDt24MJxkL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+
+</html>
